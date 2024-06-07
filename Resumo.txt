@@ -1,0 +1,22 @@
+Contextualizando funcionalidade do Script:
+
+Ele primeiramente verifica se existe uma pasta "monitoramento" criada no C:\\ da máquina, caso não exista ela cria em oculto.
+
+Depois ele vai buscar as informações de CPU, memoria e HD e informa em Porcentagem.
+
+Ele tambem realiza a busca do login de rede e Hostname da máquina.
+
+depois de realizar as buscas o sistema lista os 10 primeiros ofensores.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Pontos de melhoria.
+
+Adicionar data e hora que o script rodou para coletar as informações dentro do log de dados, facilitando o entendimento na hora da analise.
+
+Criar um Dash utilizando proprio python para que ele ao rodar já abra um Dash com todas as informações e coletando esses dados.
+
+Verificar um possivel Bug no monitoramento da CPU que mostra itens em 0%.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+O sistema roda em completo oculto pois o mesmo foi salvo com pip --onefile --noconsole, criando a regra dentro do "taskschd.msc" o sistema roda nos horarios setados
+de forma que a pessoa que está utilizando nem percebe que o sistema rodou para coletar os dados.
